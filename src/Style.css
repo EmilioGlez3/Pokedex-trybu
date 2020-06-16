@@ -17,5 +17,8 @@
 .elemento::after{
   content: "";
   display: block;
-  padding-bottom: 100%;
+}
+
+.image{
+  width: 100%;
 }

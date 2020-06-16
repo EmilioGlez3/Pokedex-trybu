@@ -11,7 +11,9 @@ class App extends Component {
         <Row>
           {pokemons.data.pokemons.map(item =>
             <Col xs={{ span: 4, offset: 1 }} md={{ span: 3, offset: 2 }} key={item.id} className='elemento'>
-              <span>{item.name}</span>
+              <span>{item.name}</span><br />
+              <span>{item.number}</span><br />
+              <img className='image' src={'https://assets.pokemon.com/assets/cms2/img/pokedex/full/' + item.number + '.png'} alt='pokemon' />
             </Col>
           )}
         </Row>
