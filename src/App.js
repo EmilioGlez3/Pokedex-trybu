@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { Component } from 'react'
+import './Style.css'
+import pokemons from './pokemon'
+import { Container, Row, Col } from 'react-bootstrap'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render () {
+    return (
+      <Container fluid>
+        <h2 className='Titulo'>Pokedex</h2>
+        <Row>
+          {pokemons.data.pokemons.map(item =>
+            <Col xs={{ span: 4, offset: 1 }} md={{ span: 3, offset: 2 }} key={item.id} className='elemento'>
+              <span>{item.name}</span>
+            </Col>
+          )}
+        </Row>
+      </Container>
+    )
+  }
 }
 
-export default App;
+export default App

@@ -1,0 +1,21 @@
+.Titulo{
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+
+.elemento{
+  background-color: #a15fc4;
+  font-size: 3vw;
+  color: #fff;
+  width: 20%;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.elemento::after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
