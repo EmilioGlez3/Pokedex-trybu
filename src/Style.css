@@ -6,12 +6,19 @@
 
 .elemento{
   background-color: #a15fc4;
-  font-size: 3vw;
-  color: #fff;
-  width: 20%;
+  font-size: 2vw;
   margin-bottom: 30px;
   border-radius: 20px;
   text-align: center;
+}
+
+.carta{
+  color: #fff;
+}
+
+.carta:hover{
+  color: #fff5;
+  text-decoration: none;
 }
 
 .elemento::after{
@@ -21,4 +28,13 @@
 
 .image{
   width: 100%;
+}
+
+.datos{
+  font-size: 4vw;
+  text-align: center;
+}
+
+.details{
+  text-align: center;
 }
